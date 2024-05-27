@@ -1,0 +1,23 @@
+<h1>JavaScript Arithmetic using function calling</h1>
+<h2>The + Operator</h2>
+<form>
+<input type="number" id="demo" style="height:30px">
+<select id="operation" onchange="data()" style="height:35px">
+<option value=" ">Choose Any operation</option>
+<option value="add">Add</option>
+</select>
+<p id="type"></p>
+<p id="output"></p>
+</form>
+<script>
+function data(){
+if(document.getElementById("demo").value!=' '){
+let x = document.getElementById("demo").value;
+let type=typeof(x);
+document.getElementById("type").innerHTML =type;
+let y = 2; 
+let z = parseInt(x) + y;
+document.getElementById("output").innerHTML =z;
+}
+}
+</script>

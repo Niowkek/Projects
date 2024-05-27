@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html style="margin-top: 300px;margin-left: 650px;">
+    <head>
+        <meta charset=utf-8 />
+        <style>
+            .dot
+            {
+                height: 200px;
+                width: 200px;
+                background-color: turquoise;
+                line-height: 200px;
+                display: block;
+                border-radius: 50%;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="dot">
+            <span id="answer">4</span>
+        </div>
+        <input type="button" onclick="start()" value="start">
+        <input type="button" onclick="stop()" value="stop">
+    </body>
+    <script>
+        function start(){
+            document.getElementById("answer").style.display="block";
+        }
+
+        function stop(){
+            document.getElementById("answer").style.display="none";
+        }
+
+    </script>
+</html>

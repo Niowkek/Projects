@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head style="margin-top: 300px;margin-left: 550px;color: indianred;background-color: indigo;">
+        <h1 style="color: olive;background-color: ivory;">Addition</h1>
+        <script>
+            function add() {
+                let x = 2 
+                let y = 3
+                let z = x + y
+                document.getElementById("answer").value = z
+            }
+        </script>
+    </head>
+    <body style="margin-top: 300px;margin-left: 550px;color: olivedrab;background-color: oldlace;">
+        Enter x:<input id="x" value="2"><br>
+        Enter y:<input id="y" value="3"><br>
+        <input type="checkbox" onclick = "add()"><br>
+        Answer:<input id="answer">
+    </body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body style="margin-top: 300px;margin-left: 600px;height: 30px;">
+<h2>The oninput Event</h2>
+<p>Write something in the text field to trigger a function.</p>
+
+<input type="text" id="myInput" oninput="myFunction()">
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  let text = document.getElementById("myInput").value;
+  document.getElementById("demo").innerHTML = "You wrote: " + text;
+}
+</script>
+</body>
+</html>

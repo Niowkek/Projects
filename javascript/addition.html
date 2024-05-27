@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head style="margin-top: 300px;margin-left: 550px;">
+        <h1>Addition</h1>
+        <script>
+            function add() {
+                var x = parseInt(document.getElementById("first").value)
+                var y= parseInt(document.getElementById("second").value)
+                var z = x + y
+                document.getElementById("answer").value = z
+            }
+        </script>
+    </head>
+    <body style="margin-top: 300px;margin-left: 550px;">
+        Enter x:<input id="first"><br>
+        Enter y:<input id="second"><br>
+        <button onclick="add()">Answer</button><br>
+        Answer:<input id="answer">
+    </body>
+</html>
